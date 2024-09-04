@@ -1,0 +1,72 @@
+@keyframes gradientAnimation {
+     0% {
+        background: linear-gradient(45deg, #ff6f61, #de8c7f);
+    }
+    25% {
+        background: linear-gradient(45deg, #ffb74d, #ffd54f);
+    }
+    50% {
+        background: linear-gradient(45deg, #4caf50, #cddc39);
+    }
+    75% {
+        background: linear-gradient(45deg, #2196f3, #03a9f4);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff6f61, #de8c7f);
+    }
+}
+
+body {
+    margin: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    animation: gradientAnimation 5s ease infinite;
+    border-radius: 5px;
+   box-shadow: 10px 10px 5px gray;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #89fc00;
+    color: white;
+     text-shadow: 
+        -2px -2px 0 black,  
+        2px -2px 0 black,   
+        -2px 2px 0 black,   
+        2px 2px 0 black,    
+        -2px 0px 0 black,   
+        2px 0px 0 black,
+        0px -2px 0 black,
+        0px 2px 0 black;
+    border-bottom: 6px solid #ff499e;
+}
+
+.card:hover {
+    transform: translateY(-10px);  /* Zdvihne kartu nahor */
+    box-shadow: 15px 15px 15px gray;  /* Zvýrazní tieň */
+}
+
+img {
+    height: 150px;
+    border-radius: 5px;
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
